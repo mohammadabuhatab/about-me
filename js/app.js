@@ -18,7 +18,7 @@ else{
 }
 if (study.toLowerCase()=== 'yes' || study.toLowerCase()==='y'){
     grade=grade+1;
-    document.write('<p>actualy i did my high school and also i graduat from a BCs digree in mechatronics engineer</p>');
+    document.write('<p>actualy i did my high school and also </br>i graduat from a BCs digree in mechatronics engineer</p>');
     document.write ("<img src='images/maxresdefault.jpg'>");}
 else {
 document.write('<p>  ops i did my high school not just that </br> and i graduating from uiversty</p>')
@@ -26,7 +26,7 @@ document.write ("<img src='images/maxresdefault.jpg'>");
 }
 if (sport.toLowerCase()=== 'yes' || sport.toLowerCase()==='y'){
     grade=grade+1;
-    document.write('<p>sport in fact a very beautful avd healthy thing make sure to do it every day</p>')
+    document.write('<p>sport in fact a very beautful and healthy thing </br>make sure to do it every day</p>')
     document.write ("<img src='images/sports.jpg'>");
 }
 else {
