@@ -1,0 +1,36 @@
+*
+{
+    background-color: #ffbe0f;
+    text-align: left;
+   
+    
+}
+img
+{
+    width: 250px;
+    height: 250px;
+  float: left;
+}
+p{
+    color: #8c0000;
+    text-align: left;
+    font-size: 15px;
+}
+h1{
+    text-align: center;
+    color: #fa1e0e;
+}
+h2{
+    text-align: center;
+    color: #fa1e0e;
+}
+h3{
+    text-align: center;
+    color: #fa1e0e;
+}
+h5{
+    text-align: center;
+    color: #fa1e0e; 
+    display: inline-block; 
+    font-size: 30px;
+}
