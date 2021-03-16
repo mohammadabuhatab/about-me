@@ -5,7 +5,7 @@ let fastFoud=['griled chiken','shawerma','hamburgur','fride chiken']
 alert('Lets play a small game I will ask you some questions about my self And lets see how the percentage of your correct expectations will be')
 let gendar = prompt('Do you think I am a male or female ?');
 
-document.write('<h2>first part `auther informations part`<h2>')
+document.write('<h2>second part `visitor guess part`<h2>');
 if (gendar.toLowerCase()=== 'male'){
 grade=grade+1;
 alert('correct');
@@ -90,31 +90,31 @@ else{
     guises=prompt('try another number,you have another ' + x + ' chance');
     console.log(i);}
 }}
-document.write('<h2>Second part of our game `guess number part` </h2>');
+//document.write('<h2>Second part of our game `guess number part` </h2>');
 
 switch (i) {
     case 1:
         grade=grade+1;
-        document.write('<h5>great you gues the number from first try</h5>');
+        document.write('<h6>great you gues the number from first try</h6>');
         break;
      case 2:
         grade=grade+1;
-        document.write('<h5>great you gues the number from second try</h5>');
+        document.write('<h6>great you gues the number from second try</h6>');
         break;
     case 3:
         grade=grade+1;
-        document.write('<h5>great you gues the number from third try</h5>');
+        document.write('<h6>great you gues the number from third try</h6>');
         break;
     case 4:
         grade=grade+1;
-        document.write('<h5>great you gues the number from fourth try</h5>');
+        document.write('<h6>great you gues the number from fourth try</h6>');
         break;
     case 5:
         grade=grade+1;
-        document.write('<h5>great you gues the number from fifth try</h5>');
+        document.write('<h6>great you gues the number from fifth try</h6>');
         break; 
     default:
-        document.write('<h5>So sory you can`t gues the number</h5>');
+        document.write('<h6>So sory you can`t gues the number</h6>');
         break;
 }
 let visitorChoesFood =prompt ('what do you think my favorite fast food ? for hent it is on of this ( ' + fastFoud+ ' )');
