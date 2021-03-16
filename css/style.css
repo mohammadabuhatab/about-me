@@ -16,9 +16,11 @@ p{
     text-align: left;
     font-size: 15px;
 }
-h1{
+h1 {
     text-align: center;
     color: #fa1e0e;
+    border: solid;
+    margin: 40px;
 }
 h2{
     text-align: center;

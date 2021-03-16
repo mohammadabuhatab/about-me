@@ -6,7 +6,9 @@ let study = prompt('Do you think I finished my high School or not ?');
 let sport = prompt('Do you think I like sports or not ?');
 let rain = prompt('Do you think I like a rain or not ?');
 let reading = prompt('Do you think I like reading or not ?');
-
+let guises =prompt('now lets go to the second part of our game in this part you should gues a number between 0 and 100 , you have a 6 chanse');
+let i =0 ;
+document.write('<h2>first part `auther informations part`<h2>')
 if (gendar.toLowerCase()=== 'male'){
 grade=grade+1;
 document.write('<p>I am so glad because I am a man </p>')
@@ -18,7 +20,7 @@ else{
 }
 if (study.toLowerCase()=== 'yes' || study.toLowerCase()==='y'){
     grade=grade+1;
-    document.write('<p>actualy i did my high school and also </br>i graduat from a BCs digree in mechatronics engineer</p>');
+    document.write('<p>actualy i did my high school and also </br> i graduat from a BCs digree in mechatronics engineer</p>');
     document.write ("<img src='images/maxresdefault.jpg'>");}
 else {
 document.write('<p>  ops i did my high school not just that </br> and i graduating from uiversty</p>')
@@ -55,26 +57,66 @@ console.log(grade);
 
 switch (grade){
     case 1:
-        document.write('<h5>you got 1/5 points in this game</h5>')
+        document.write('<h5>you got 1/5 points in this game</h5><hr/>')
         break;
     case 2:
-        document.write('<h5>you got 2/5 points in this game</h5>')
+        document.write('<h5>you got 2/5 points in this game</h5><hr/>')
 
         break;    
     case 3:
-        document.write('<h5>you got 3/5 points in this game</h5>')
+        document.write('<h5>you got 3/5 points in this game</h5><hr/>')
 
          break;
     case 4:
-        document.write('<h5>you got 4/5 points in this game</h5>')
+        document.write('<h5>you got 4/5 points in this game</h5><hr/>')
 
         break;
     case 5:
-        document.write('<h5>you got 5/5 points in this game</h5>')
+        document.write('<h5>you got 5/5 points in this game</h5><hr/>')
 
            break;
      default:
-        document.write('<h5>you didn`t answer any question true</h5>')
+        document.write('<h5>you didn`t answer any question true</h5><hr/>')
 
            break;
+}
+
+while (guises!=15){
+    i ++
+    let x =6-i;
+    if (i ==6){
+        guises=15;
+    
+     }
+     else{
+if (guises>15){
+    alert('your gues is higer')
+    guises=prompt('try another number,you have another ' + x + ' chance');
+    console.log(i);}
+else{
+    alert('your gues is lower')
+    guises=prompt('try another number,you have another ' + x + ' chance');
+    console.log(i);}
+}}
+document.write('<h2>Second part of our game `guess number part` </h2>');
+
+switch (i) {
+    case 1:
+        document.write('<h5>great you gues the number from first try</h5>');
+        break;
+     case 2:
+        document.write('<h5>great you gues the number from second try</h5>');
+        break;
+    case 3:
+        document.write('<h5>great you gues the number from third try</h5>');
+        break;
+    case 4:
+        document.write('<h5>great you gues the number from fourth try</h5>');
+        break;
+    case 5:
+        document.write('<h5>great you gues the number from fifth try</h5>');
+        break; 
+    default:
+        document.write('<h5>So sory you can`t gues the number</h5>');
+        break;
 }
