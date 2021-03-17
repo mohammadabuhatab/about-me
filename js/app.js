@@ -1,70 +1,78 @@
 'use strict';
-let grade =0;
+
+let grade =0;   
+
+function score(){
+    alert ('correct');
+    grade ++
+}
+
+function incorrect(){
+    alert ('incorrect');
+}
+
+
 let i =1 ;
+
 let fastFoud=['griled chiken','shawerma','hamburgur','fride chiken']
 alert('Lets play a small game I will ask you some questions about my self And lets see how the percentage of your correct expectations will be')
 let gendar = prompt('Do you think I am a male or female ?');
 
 document.write('<h2>second part `visitor guess part`<h2>');
 if (gendar.toLowerCase()=== 'male'){
-grade=grade+1;
-alert('correct');
+score();
 document.write('<p>I am so glad because I am a man </p>')
 document.write ("<img src='images/men-vs-women-jpg.jpeg'>");
 }
 else{
-    alert('incorrect');
+    incorrect();
     document.write('<p>thanks for god because I am not a female,</br> I am just lauging but actualy I am a male</p>')
     document.write ("<img src='images/men-vs-women-jpg.jpeg'>");
 }
 
 let study = prompt('Do you think I finished my high School or not ?');
 if (study.toLowerCase()=== 'yes' || study.toLowerCase()==='y'){
-    grade=grade+1;
-    alert('correct');
+    score();
     document.write('<p>actualy i did my high school and also </br> i graduat from a BCs digree in mechatronics engineer</p>');
     document.write ("<img src='images/maxresdefault.jpg'>");}
 else {
-    alert('incorrect');
-document.write('<p>  ops i did my high school not just that </br> and i graduating from uiversty</p>')
+    incorrect();
+    document.write('<p>  ops i did my high school not just that </br> and i graduating from uiversty</p>')
 document.write ("<img src='images/maxresdefault.jpg'>");
 }
 
 let sport = prompt('Do you think I like sports or not ?');
 if (sport.toLowerCase()=== 'yes' || sport.toLowerCase()==='y'){
-    grade=grade+1;
-    alert('correct');
+    score();
     document.write('<p>sport in fact a very beautful and healthy thing </br>make sure to do it every day</p>')
     document.write ("<img src='images/sports.jpg'>");
 }
 else {
-    alert('incorrect');
+    incorrect();
     document.write('<p> when you saw no ,</br> I think you imagin this photo</p>')
     document.write ("<img src='images/AR-191229829.jpg'>");
 }
 
 let rain = prompt('Do you think I like a rain or not ?');
 if (rain.toLowerCase()=== 'yes' || rain.toLowerCase()==='y'){
-    grade=grade+1;
-    alert('correct');
+    score();
     document.write('<p>of cours I love raining </p>');
     document.write ("<img src='images/blog-rain-or-shine.jpg'>");
 }
 else {
-    alert('incorrect');
+    incorrect();
     document.write('<p> is there any one did not like rain !!</p>')
     document.write ("<img src='images/driving-in-the-rain.jpg'>");
 }
 
 let reading = prompt('Do you think I like reading or not ?');
 if (reading.toLowerCase()=== 'yes' || reading.toLowerCase()==='y'){
-    grade=grade+1;
-    alert('correct');
+    score();
     document.write('<p> reading in fact is one of the most thinks i like</p>')
     document.write ("<img src='images/Blog-Reading-at-Home.jpg'>");
 }
 else {
-    alert('incorrect');
+    incorrect();
     document.write('<p>   actualy I am not surprised but unlike usual</br> I like readings</p>')
     document.write ("<img src='images/rainbow-research-reading-blog-header.jpg'>");
 }
@@ -120,15 +128,16 @@ switch (i) {
 let visitorChoesFood =prompt ('what do you think my favorite fast food ? for hent it is on of this ( ' + fastFoud+ ' )');
 if (visitorChoesFood === 'shawerma')
 {
-    grade=grade+1;
-    alert('correct');
+    score();
 }
 else{
     alert('incorrect , my favorite fast food is shawerma'); 
 }
+
 switch (grade){
     case 1:
         document.write('<h5>you got 1/7 points in this game</h5><hr/>')
+
         break;
     case 2:
         document.write('<h5>you got 2/7 points in this game</h5><hr/>')
@@ -157,3 +166,4 @@ switch (grade){
 
            break;
 }
+
