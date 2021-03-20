@@ -76,7 +76,6 @@ else {
     document.write('<p>   actualy I am not surprised but unlike usual</br> I like readings</p>')
     document.write ("<img src='images/rainbow-research-reading-blog-header.jpg'>");
 }
-console.log(grade);
 
 
 let guises =prompt('now lets go to the second part of our game in this part you should gues a number between 0 and 100 , you have a 6 chanse');
@@ -92,13 +91,12 @@ while (guises!=15){
 if (guises>15){
     alert('your gues is higer')
     guises=prompt('try another number,you have another ' + x + ' chance');
-    console.log(i);}
+    }
 else{
     alert('your gues is lower')
     guises=prompt('try another number,you have another ' + x + ' chance');
-    console.log(i);}
+    }
 }}
-//document.write('<h2>Second part of our game `guess number part` </h2>');
 
 switch (i) {
     case 1:
