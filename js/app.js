@@ -16,6 +16,7 @@ let i =1 ;
 
 let fastFoud=['griled chiken','shawerma','hamburgur','fride chiken']
 alert('Lets play a small game I will ask you some questions about my self And lets see how the percentage of your correct expectations will be')
+function Q1(){
 let gendar = prompt('Do you think I am a male or female ?');
 
 document.write('<h2>second part `visitor guess part`<h2>');
@@ -28,8 +29,8 @@ else{
     incorrect();
     document.write('<p>thanks for god because I am not a female,</br> I am just lauging but actualy I am a male</p>')
     document.write ("<img src='images/men-vs-women-jpg.jpeg'>");
-}
-
+}}
+function Q2(){
 let study = prompt('Do you think I finished my high School or not ?');
 if (study.toLowerCase()=== 'yes' || study.toLowerCase()==='y'){
     score();
@@ -39,8 +40,8 @@ else {
     incorrect();
     document.write('<p>  ops i did my high school not just that </br> and i graduating from uiversty</p>')
 document.write ("<img src='images/maxresdefault.jpg'>");
-}
-
+}}
+function Q3(){
 let sport = prompt('Do you think I like sports or not ?');
 if (sport.toLowerCase()=== 'yes' || sport.toLowerCase()==='y'){
     score();
@@ -51,8 +52,8 @@ else {
     incorrect();
     document.write('<p> when you saw no ,</br> I think you imagin this photo</p>')
     document.write ("<img src='images/AR-191229829.jpg'>");
-}
-
+}}
+function Q4(){
 let rain = prompt('Do you think I like a rain or not ?');
 if (rain.toLowerCase()=== 'yes' || rain.toLowerCase()==='y'){
     score();
@@ -63,8 +64,8 @@ else {
     incorrect();
     document.write('<p> is there any one did not like rain !!</p>')
     document.write ("<img src='images/driving-in-the-rain.jpg'>");
-}
-
+}}
+function Q5(){
 let reading = prompt('Do you think I like reading or not ?');
 if (reading.toLowerCase()=== 'yes' || reading.toLowerCase()==='y'){
     score();
@@ -75,9 +76,9 @@ else {
     incorrect();
     document.write('<p>   actualy I am not surprised but unlike usual</br> I like readings</p>')
     document.write ("<img src='images/rainbow-research-reading-blog-header.jpg'>");
-}
+}}
 
-
+function Q6(){
 let guises =prompt('now lets go to the second part of our game in this part you should gues a number between 0 and 100 , you have a 6 chanse');
 
 while (guises!=15){
@@ -96,7 +97,7 @@ else{
     alert('your gues is lower')
     guises=prompt('try another number,you have another ' + x + ' chance');
     }
-}}
+}}}
 
 switch (i) {
     case 1:
@@ -123,6 +124,7 @@ switch (i) {
         document.write('<h6>So sory you can`t gues the number</h6>');
         break;
 }
+function Q7(){
 let visitorChoesFood =prompt ('what do you think my favorite fast food ? for hent it is on of this ( ' + fastFoud+ ' )');
 if (visitorChoesFood === 'shawerma')
 {
@@ -131,7 +133,7 @@ if (visitorChoesFood === 'shawerma')
 else{
     alert('incorrect , my favorite fast food is shawerma'); 
 }
-
+}
 switch (grade){
     case 1:
         document.write('<h5>you got 1/7 points in this game</h5><hr/>')
@@ -165,3 +167,10 @@ switch (grade){
            break;
 }
 
+Q1();
+Q2();
+Q3();
+Q4();
+Q5();
+Q6();
+Q7();
